@@ -1,0 +1,126 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Typing Effect for KHELINFO */
+.typing-line {
+  font-size: 3.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #000;
+  width: 0;
+  animation: typing 2.8s ease forwards, blink 0.8s step-end infinite;
+}
+
+/* Gradient text */
+.khelinfo {
+  background: linear-gradient(to right, #000000 40%, #2273d2 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Coming Soon */
+.coming-soon {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #000000;
+}
+
+/* Contact section */
+.contact {
+  margin-top: 0px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.contact a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  color: #003a80;
+}
+
+/* Animations */
+@keyframes typing {
+  0% { width: 0 }
+  100% { width: 8.5ch }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+/* Coming Soon Stylized Boxes */
+/* Coming Soon Stylized Boxes */
+.coming-soon-boxes {
+  margin-top: 20px;
+  margin-bottom: 80px; /* Add space below to push "mail us" down */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* COMING Box */
+.coming {
+  position: relative;
+  z-index: 2;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 10px 30px;
+  border: 4px solid transparent;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  border-image-slice: 1;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #000000 40%, #2273d2 60%);
+  border-image-source: linear-gradient(to right, #000000 40%, #2273d2 60%);
+}
+
+/* SOON Box */
+.soon {
+  position: absolute;
+
+  top: 60px;
+  left: 44px;
+  transform: rotate(-15deg);
+  z-index: 1;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 10px 30px;
+  border: 4px solid transparent;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  border-image-slice: 1;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #000000 40%, #2273d2 60%);
+  border-image-source: linear-gradient(to right, #000000 40%, #2273d2 60%);
+}
+.mailimg{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+
+}
